@@ -6,9 +6,13 @@
   <packaging>pom</packaging>
 
     <modules>
-      <module>xiaoyingcoudan-base</module>
-      <module>xiaoyingcoudan-api</module>
-      <module>xiaoyingcoudan-service</module>
+      <module>../xiaoyingcoudan-base</module>
+      <module>../xiaoyingcoudan-api</module>
+      <module>../xiaoyingcoudan-service</module>
+      <module>../xiaoyingcoudan-web</module>
+      <module>../common</module>
+      <module>../constant</module>
+      <module>../webframework</module>
     </modules>
 
     <!-- 全局变量 -->
@@ -30,6 +34,7 @@
         <yuanben-common-config.version>2.0.0-Release</yuanben-common-config.version>
         <yuanben-common.version>2.0.0-Release</yuanben-common.version>
         <yuanben-db-core.version>2.0.0-Release</yuanben-db-core.version>
+        <springboot.version>1.4.5.RELEASE</springboot.version>
         
     </properties>
 
