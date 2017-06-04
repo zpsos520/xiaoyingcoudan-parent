@@ -6,13 +6,17 @@
   <packaging>pom</packaging>
 
     <modules>
-      <module>../xiaoyingcoudan-base</module>
-      <module>../xiaoyingcoudan-api</module>
-      <module>../xiaoyingcoudan-service</module>
-      <module>../xiaoyingcoudan-web</module>
-      <module>../common</module>
-      <module>../constant</module>
-      <module>../webframework</module>
+      <module>xiaoyingcoudan-base</module>
+      <module>xiaoyingcoudan-api</module>
+      <module>xiaoyingcoudan-service</module>
+      <module>xiaoyingcoudan-web</module>
+      <module>common</module>
+      <module>constant</module>
+      <module>webframework</module>
+      <module>sys-web</module>
+      <module>sys-base</module>
+      <module>sys-api</module>
+      <module>sys-service</module>
     </modules>
 
     <!-- 全局变量 -->
@@ -41,6 +45,15 @@
     <!-- 依赖管理 -->
     <dependencyManagement>
         <dependencies>
+        	<dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        
         	
         	<!-- ZooKeeper -->
 			<dependency>
